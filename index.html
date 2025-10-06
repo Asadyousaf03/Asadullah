@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta Tags for SEO and Responsiveness -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional portfolio showcasing my work as a developer. View my projects, skills, and get in touch for collaboration opportunities.">
+    <meta name="keywords" content="portfolio, developer, web development, projects, skills">
+    <meta name="author" content="Asadullah Yousaf">
+    
+    <!-- Open Graph Meta Tags for Social Media -->
+    <meta property="og:title" content="Your Name - Developer Portfolio">
+    <meta property="og:description" content="Professional portfolio showcasing my work as a developer.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourwebsite.com">
+    
+    <!-- Title and Favicon -->
+    <title>Asadullah - Developer Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- EmailJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Asadullah Yousaf",
+        "jobTitle": "Full Stack Developer",
+        "url": "https://yourwebsite.com",
+        "sameAs": [
+            "https://linkedin.com/in/yourprofile",
+            "https://github.com/yourusername"
+        ]
+    }
+    </script>
+</head>
+<body>
+    <!-- Navigation Header -->
+    <header class="header" role="banner">
+        <nav class="nav" role="navigation" aria-label="Main navigation">
+            <div class="nav-container">
+                <a href="#home" class="nav-logo" aria-label="Go to top of page">
+                    <span class="logo-text">AY</span>
+                </a>
+                
+                <!-- Mobile Menu Button -->
+                <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <span class="nav-toggle-line"></span>
+                    <span class="nav-toggle-line"></span>
+                    <span class="nav-toggle-line"></span>
+                </button>
+                
+                <!-- Navigation Menu -->
+                <ul class="nav-menu" role="menubar">
+                    <li role="none"><a href="#home" class="nav-link" role="menuitem">Home</a></li>
+                    <li role="none"><a href="#about" class="nav-link" role="menuitem">About</a></li>
+                    <li role="none"><a href="#projects" class="nav-link" role="menuitem">Projects</a></li>
+                    <li role="none"><a href="#skills" class="nav-link" role="menuitem">Skills</a></li>
+                    <li role="none"><a href="#contact" class="nav-link" role="menuitem">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main role="main">
+        <!-- Hero Section -->
+        <section id="home" class="hero" role="banner">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="hero-name">Asadullah Yousaf</span>
+                    </h1>
+                    <p class="hero-subtitle">Generative AI Engineer</p>
+                    <p class="hero-description">
+                        Designing next-gen AI agents and RAG workflows to empower businesses with adaptive, data-aware intelligence.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#contact" class="btn btn-primary" aria-label="Get in touch">Get In Touch</a>
+                        <a href="assets/AsadullahYousaf.pdf" class="btn btn-secondary" download aria-label="Download resume">Download CV</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="hero-image-placeholder" aria-hidden="true">
+                        <!-- Professional headshot would go here -->
+                        <!-- <svg viewBox="0 0 400 400" class="placeholder-svg">
+                            <circle cx="200" cy="200" r="180" fill="var(--color-primary-light)" opacity="0.1"/>
+                            <circle cx="200" cy="160" r="60" fill="var(--color-primary)" opacity="0.3"/>
+                            <path d="M120 320 Q200 280 280 320" fill="var(--color-primary)" opacity="0.3"/>
+                        </svg> -->
+                        <img src="assets/asadullah.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about section" role="region" aria-labelledby="about-title">
+            <div class="container">
+                <h2 id="about-title" class="section-title">About Me</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p class="about-intro">
+                           I’m a GenAI Engineer with over a year of experience in building agentic and RAG-based applications that automate workflows and enhance decision-making.
+                        </p>
+                        <p>
+                             My work focuses on creating problem-solving AI systems and integrating them seamlessly into existing business ecosystems. I also specialize in fine-tuning large language models and customizing AI pipelines to meet unique project needs. With every project, my goal is to bridge innovation and impact—leveraging AI to make systems smarter, faster, and more adaptive.
+                        </p>
+                        <!-- <p>
+                            When I'm not coding, you can find me exploring new technologies, contributing to 
+                            open-source projects, or sharing knowledge with the developer community.
+                        </p> -->
+                    </div>
+                    <!-- <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">Projects Completed</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">5+</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">Client Satisfaction</span>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects section" role="region" aria-labelledby="projects-title">
+        <div class="container">
+            <h2 id="projects-title" class="section-title">Featured Projects</h2>
+            <p class="section-subtitle">A showcase of my recent work and personal projects</p>
+
+            <div class="projects-grid">
+
+            <!-- Project Card -->
+            <article class="project-card">
+                <div class="project-card-inner">
+
+                <!-- FRONT -->
+                <div class="project-front">
+                    <div class="project-image">
+                    <img src="assets/fp.png" alt="floorgenAI" class="project-thumbnail">
+                    </div>
+                    <div class="project-content">
+                    <h3 class="project-title">FloorGen AI</h3>
+                    <div class="project-tech">
+                        <span class="tech-tag">Django</span>
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">SQL</span>
+                        <span class="tech-tag">GRADIO</span>
+                        <span class="tech-tag">Diffusion (Flux) </span>
+                        <span class="tech-tag">IMAGE PROCESSING</span>
+                    </div>
+                    </div>
+                </div>
+
+                <!-- BACK -->
+                <div class="project-back">
+                    <h3>FloorGen AI</h3>
+                    <p>
+                    This system takes natural language input and generates detailed floor plans using the FLUX-Schnell diffusion model. It consists of two core modules: an image generation module that creates realistic floor plan visuals, and a raster-to-vector conversion module that transforms these images into editable vector or labeled formats.
+
+An evaluation function measures layout quality, enabling users to choose and export the best design. The generated floor plans can be used in game development, architectural visualization, and AI-assisted design applications, providing a smart and efficient way to turn textual descriptions into structured, realistic floor layouts.
+                    </p>
+                    <div class="project-links">
+                    <a href="#" target="_blank">Live Demo</a>
+                    <a href="#" target="_blank">GitHub</a>
+                    </div>
+                </div>
+
+                </div>
+            </article>
+
+            <!-- Duplicate for other projects -->
+            <article class="project-card">
+                <div class="project-card-inner">
+                <div class="project-front">
+                    <div class="project-image">
+                    <img src="assets/ytbot.png" alt="Multilingual RAG-Based YouTube Chatbot" class="project-thumbnail">
+                    </div>
+                    <div class="project-content">
+                    <h3 class="project-title">YTBot</h3>
+                    <div class="project-tech">
+                        <span class="tech-tag">PYTHON</span>
+                        <span class="tech-tag">LangChain</span>
+                        <span class="tech-tag">FIASS</span>
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS/JS</span>
+                    </div>
+                    </div>
+                </div>
+                <div class="project-back">
+                    <!-- <h3>Multilingual RAG-Based YouTube Chatbot</h3> -->
+                    <p>A Flask-based AI application that enables users to interact with YouTube videos through natural language. By providing a video link (with captions), the system fetches and embeds transcripts using FAISS and Hugging Face multilingual embeddings, allowing multilingual summarization and Q&A.
+
+Powered by a RAG architecture with Gemini (gemini-2.5-flash), it delivers accurate, context-aware answers while maintaining active sessions for seamless interaction. The system provides an intuitive way to explore and understand video content efficiently, making it ideal for educational, research, and content analysis purposes.</p>
+                    <div class="project-links">
+                    <!-- <a href="#" target="_blank">Live Demo</a> -->
+                    <a href="#" target="_blank">GitHub</a>
+                    </div>
+                </div>
+                </div>
+            </article>
+            <article class="project-card">
+                <div class="project-card-inner">
+                <div class="project-front">
+                    <div class="project-image">
+                    <img src="assets/lstmvsgru.png" alt="Task Management App" class="project-thumbnail">
+                    </div>
+                    <div class="project-content">
+                    <h3 class="project-title">Story Generation Using LSTM and GRU</h3>
+                    <div class="project-tech">
+                        <span class="tech-tag">Vue.js</span>
+                        <span class="tech-tag">Express</span>
+                        <span class="tech-tag">Socket.io</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                    </div>
+                    </div>
+                </div>
+                <div class="project-back">
+                    <p>This project focuses on generating creative stories from short user-provided outlines using Recurrent Neural Networks (RNNs). Users input a 50-word summary, and the system expands it into a coherent, full-length story. The model was trained on large-scale textual data after extensive data scraping and cleaning to capture narrative flow and language patterns.
+
+Both LSTM and GRU architectures were implemented and compared in terms of story coherence, creativity, and training efficiency. Experimental results showed that GRU outperformed LSTM on short sequences due to its simpler structure and faster convergence, making it better suited for lightweight text generation tasks.</p>
+                    <div class="project-links">
+                    <!-- <a href="#" target="_blank">Live Demo</a> -->
+                    <a href="#" target="_blank">GitHub</a>
+                    </div>
+                </div>
+                </div>
+            </article>
+            </div>
+        </div>
+        </section>
+
+
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills section" role="region" aria-labelledby="skills-title">
+            <div class="container">
+                <h2 id="skills-title" class="section-title">Skills & Technologies</h2>
+                <p class="section-subtitle">Tools and technologies I work with</p>
+                
+                <div class="skills-grid">
+                    <!-- Frontend Skills -->
+                    <div class="skill-category">
+                        <h3 class="skill-category-title">Frontend</h3>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <polyline points="16,18 22,12 16,6"/>
+                                    <polyline points="8,6 2,12 8,18"/>
+                                </svg>
+                                <span class="skill-name">HTML5 & CSS3</span>
+                            </div>
+                            <div class="skill-item">
+                                <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path d="M20.24 12.24a6 6 0 0 0-8.49-8.49L5 10.5V19h8.5z"/>
+                                    <line x1="16" y1="8" x2="2" y2="22"/>
+                                    <line x1="17.5" y1="15" x2="9" y2="15"/>
+                                </svg>
+                                <span class="skill-name">JavaScript (ES6+)</span>
+                            </div>
+                            <div class="skill-item">
+                                <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/>
+                                    <polygon points="9.75,15.02 15.5,11.75 9.75,8.48"/>
+                                </svg>
+                                <span class="skill-name">React</span>
+                            </div>
+                            <!-- <div class="skill-item">
+                                <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <polygon points="12,2 22,8.5 22,15.5 12,22 2,15.5 2,8.5"/>
+                                    <line x1="12" y1="22" x2="12" y2="15.5"/>
+                                    <polyline points="22,8.5 12,15.5 2,8.5"/>
+                                    <polyline points="2,15.5 12,8.5 22,15.5"/>
+                                </svg>
+                                <span class="skill-name">Vue.js</span>
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <!-- Backend Skills -->
+                    <div class="skill-category">
+                        <h3 class="skill-category-title">Backend</h3>
+                        <div class="skills-list">
+                            <!-- <div class="skill-item">
+                                <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                                    <polyline points="7.5,4.21 12,6.81 16.5,4.21"/>
+                                    <polyline points="7.5,19.79 7.5,14.6 3,12"/>
+                                    <polyline points="21,12 16.5,14.6 16.5,19.79"/>
+                                </svg>
+                                <span class="skill-name">Node.js</span>
+                            </div> -->
+                            <div class="skill-item">
+                                <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <circle cx="12" cy="12" r="3"/>
+                                    <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+                                </svg>
+                                <span class="skill-name">Python</span>
+                            </div>
+                            <!-- LangChain -->
+                            <div class="skill-item">
+                                <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2z"/>
+                                    <path d="M12 6v6l4 2"/>
+                                </svg>
+                                <span class="skill-name">LangChain</span>
+                            </div>
+
+                            <!-- LlamaIndex -->
+                            <div class="skill-item">
+                                <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path d="M12 22c5.5 0 10-4.5 10-10S17.5 2 12 2 2 6.5 2 12s4.5 10 10 10z"/>
+                                    <path d="M8 12h8M12 8v8"/>
+                                </svg>
+                                <span class="skill-name">LlamaIndex</span>
+                            </div>
+
+                            <!-- Hugging Face -->
+                            <div class="skill-item">
+                                <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <circle cx="9" cy="9" r="1.5"/>
+                                    <circle cx="15" cy="9" r="1.5"/>
+                                    <path d="M7 14c2 2 8 2 10 0"/>
+                                </svg>
+                                <span class="skill-name">Hugging Face</span>
+                            </div>
+
+                            <!-- <div class="skill-item">
+                                <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path d="M9 20l-5.447-2.724A1 1 0 0 1 3 16.382V9.618a1 1 0 0 1 .553-.894L9 6l5.447 2.724A1 1 0 0 1 15 9.618v6.764a1 1 0 0 1-.553.894L9 20"/>
+                                    <path d="M9 6v14"/>
+                                    <path d="M15 9.618l5.447-2.724A1 1 0 0 1 21 7.618v5.764a1 1 0 0 1-.553.894L15 16.382"/>
+                                </svg>
+                                <span class="skill-name">Express.js</span>
+                            </div> -->
+                            
+                        </div>
+                    </div>
+
+                    <!-- Tools & Others -->
+                    <div class="skill-category">
+                        <h3 class="skill-category-title">Tools & Others</h3>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                                </svg>
+                                <span class="skill-name">Git & GitHub</span>
+                            </div>
+                            <div class="skill-item">
+                                <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path d="M21 2H3v20l4.5-4.5L12 22l4.5-4.5L21 22V2z"/>
+                                    <line x1="7" y1="7" x2="17" y2="7"/>
+                                    <line x1="7" y1="11" x2="17" y2="11"/>
+                                    <line x1="7" y1="15" x2="13" y2="15"/>
+                                </svg>
+                                <span class="skill-name">Docker</span>
+                            </div>
+                            <!-- FastAPI -->
+                            <div class="skill-item">
+                                <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <path d="M12 6v6l4 2"/>
+                                </svg>
+                                <span class="skill-name">FastAPI</span>
+                            </div>
+
+                            <div class="skill-item">
+                                <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3z"/>
+                                    <path d="M19 10v2a7 7 0 0 1-14 0v-2"/>
+                                    <line x1="12" y1="19" x2="12" y2="23"/>
+                                    <line x1="8" y1="23" x2="16" y2="23"/>
+                                </svg>
+                                <span class="skill-name">REST APIs</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact section" role="region" aria-labelledby="contact-title">
+            <div class="container">
+                <h2 id="contact-title" class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Let's work together on your next project</p>
+                
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3 class="contact-info-title">Let's Connect</h3>
+                        <p class="contact-info-text">
+                            I'm always interested in new opportunities and exciting projects. 
+                            Whether you have a question or just want to say hi, feel free to reach out!
+                        </p>
+                        
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                    <polyline points="22,6 12,13 2,6"/>
+                                </svg>
+                                <div class="contact-method-content">
+                                    <span class="contact-method-label">Email</span>
+                                    <a href="mailto:your.email@example.com" class="contact-method-value">asaduyousaf@gmail.com</a>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-method">
+                                <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                                </svg>
+                                <div class="contact-method-content">
+                                    <span class="contact-method-label">Phone</span>
+                                    <a href="tel:+1234567890" class="contact-method-value">+923100403832</a>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-method">
+                                <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                    <circle cx="12" cy="10" r="3"/>
+                                </svg>
+                                <div class="contact-method-content">
+                                    <span class="contact-method-label">Location</span>
+                                    <span class="contact-method-value">Lahore, Pakistan</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <form class="contact-form" role="form" aria-labelledby="contact-form-title"
+                    class="contact-form"
+                    role="form"
+                    aria-labelledby="contact-form-title"
+                    action="https://formspree.io/f/your_form_id"
+                    method="POST"
+                    >
+
+                        <h3 id="contact-form-title" class="contact-form-title">Send a Message</h3>
+                        
+                        <div class="form-group">
+                            <label for="name" class="form-label">Name *</label>
+                            <input type="text" id="name" name="name" class="form-input" required aria-required="true">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email *</label>
+                            <input type="email" id="email" name="email" class="form-input" required aria-required="true">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject" class="form-label">Subject</label>
+                            <input type="text" id="subject" name="subject" class="form-input">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message" class="form-label">Message *</label>
+                            <textarea id="message" name="message" class="form-textarea" rows="5" required aria-required="true"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <span class="btn-text">Send Message</span>
+                            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <line x1="22" y1="2" x2="11" y2="13"/>
+                                <polygon points="22,2 15,22 11,13 2,9"/>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-main">
+                    <div class="footer-logo">
+                        <span class="logo-text">YN</span>
+                    </div>
+                    <p class="footer-description">
+                        Building digital experiences that make a difference.
+                    </p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4 class="footer-links-title">Quick Links</h4>
+                    <ul class="footer-links-list">
+                        <li><a href="#home" class="footer-link">Home</a></li>
+                        <li><a href="#about" class="footer-link">About</a></li>
+                        <li><a href="#projects" class="footer-link">Projects</a></li>
+                        <li><a href="#skills" class="footer-link">Skills</a></li>
+                        <li><a href="#contact" class="footer-link">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-social">
+                    <h4 class="footer-social-title">Follow Me</h4>
+                    <div class="social-links">
+                        <a href="https://linkedin.com/in/yourprofile" class="social-link" aria-label="LinkedIn Profile" target="_blank" rel="noopener">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                                <rect x="2" y="9" width="4" height="12"/>
+                                <circle cx="4" cy="4" r="2"/>
+                            </svg>
+                        </a>
+                        <a href="https://github.com/yourusername" class="social-link" aria-label="GitHub Profile" target="_blank" rel="noopener">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                            </svg>
+                        </a>
+                        <a href="https://twitter.com/yourusername" class="social-link" aria-label="Twitter Profile" target="_blank" rel="noopener">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/>
+                            </svg>
+                        </a>
+                        <a href="mailto:your.email@example.com" class="social-link" aria-label="Email Contact">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="footer-copyright">
+                    &copy; 2025 Asadullah. All rights reserved.
+                </p>
+                <p class="footer-credit">
+                    Built with ❤️ using vanilla HTML, CSS & JavaScript
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" aria-label="Back to top" title="Back to top">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <line x1="12" y1="19" x2="12" y2="5"/>
+            <polyline points="5,12 12,5 19,12"/>
+        </svg>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
